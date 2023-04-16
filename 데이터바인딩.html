@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터바인딩</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="데이터바인딩.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" id="more">더보기</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" id="price">가격순정렬</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" id="title">상품명정렬</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" id="less">6만원이하 상품</button>
+    </div>
+    <!-- select 인풋 다루기 -->
+    <form class="container my-5 form-group">
+      <p>상품선택</p>
+      <!-- select는 드롭다운을 구현하기 위한 input -->
+      <select class="form-select mt-2">
+        <option>갤럭시</option>
+        <option>아이폰</option>
+      </select>
+      <select class="form-select mt-2 form-hide"></select>
+    </form>
+    <!-- select 인풋 다루기 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="데이터바인딩.js"></script>
+  </body>
+</html>
